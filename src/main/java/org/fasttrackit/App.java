@@ -11,10 +11,10 @@ public class App
         // this is also called initializing a variable
        Car firstCompetitor = new Car(new Engine());
 
-       firstCompetitor.name = "Dacia";
-       firstCompetitor.color = "black";
-       firstCompetitor.doorCount = 5;
-       firstCompetitor.mileage = 9.5;
+       firstCompetitor.setName("Dacia");
+       firstCompetitor.setColour("black");
+       firstCompetitor.setTotalKm(50);
+       firstCompetitor.setMileage(9.5);
 
        //local variables are variables declared inside a method
         //they don't receive default values
@@ -27,7 +27,7 @@ public class App
         //prints a variable
 
 
-        System.out.println(firstEngine.manufacturer);
+        //System.out.println(firstEngine.manufacturer);
         System.out.println(firstCompetitor.engine.manufacturer);
 
 
