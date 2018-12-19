@@ -2,10 +2,16 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+    public static int aplicationTotalNumberOfVehicles = 1;
+
     private String name;
     private String colour;
     private double mileage;
     private long totalKm;
+
+    public Vehicle() {
+        aplicationTotalNumberOfVehicles++
+    }
 
     public double accelerate (double speed, double durationInHours){
         System.out.println(name + "accelerated with " + speed + " km/h in "+ durationInHours + " minutes.");
