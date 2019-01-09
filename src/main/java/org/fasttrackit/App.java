@@ -10,6 +10,14 @@ public class App
 {
     public static void main( String[] args )
     {
+//polymorfism = an object can take multiple forms
+        Vehicle cheatingCar2 = new CheatingCar();
+//        apelarea metodei accelerate pe obiectul cheatingcar2 va apela metoda din CheatingCar (suprascrisa)
+// si nu din clasa Vehicle
+        cheatingCar2.accelerate(10,2);
+//type casting
+        ((CheatingCar) cheatingCar2).testMethod();
+
         Engine engine = new Engine();
         engine.manufacturer="Renault";
 

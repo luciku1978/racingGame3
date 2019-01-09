@@ -13,6 +13,7 @@ public class CheatingCar extends Vehicle {
 //        double cheatingSpeed = speed*3;
 //        return super.accelerate(cheatingSpeed,durationInHours);
 
+        System.out.println("Accelerating as cheating car!");
 
         System.out.println(getName() + " accelerated with " + speed + " km/h for " + durationInHours + " hours.");
 
@@ -27,5 +28,9 @@ public class CheatingCar extends Vehicle {
     @Override
     public AutoVehicle returnSomeVehicle() {
         return new AutoVehicle();
+    }
+
+    public void testMethod(){
+
     }
 }
