@@ -20,6 +20,10 @@ public class Vehicle {
         System.out.println("Traveled distance " + distance);
         return distance;
     }
+//metoda folosita doar pt exemplificarea co-variant return type
+    public Vehicle returnSomeVehicle(){
+        return this;
+    }
 
 //method overloading - mai jos
     public double accelerate (double speed){
