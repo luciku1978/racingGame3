@@ -10,17 +10,31 @@ public class Vehicle {
     private long totalKm;
 
     public Vehicle() {
-        aplicationTotalNumberOfVehicles++
+        aplicationTotalNumberOfVehicles++;
     }
 
     public double accelerate (double speed, double durationInHours){
-        System.out.println(name + "accelerated with " + speed + " km/h in "+ durationInHours + " minutes.");
-
+        System.out.println(name + "accelerated with " + speed + " km/h for "+ durationInHours + " hours.");
 
         double distance = speed * durationInHours;
         System.out.println("Traveled distance " + distance);
         return distance;
     }
+
+//method overloading - mai jos
+    public double accelerate (double speed){
+//        1.varianta cu duplicare de cod
+//        double durationInHours = 1.5;
+//        System.out.println(name + "accelerated with " + speed + " km/h for "+ durationInHours + " hours.");
+//
+//        double distance = speed * durationInHours;
+//        System.out.println("Traveled distance " + distance);
+//        return distance;
+
+//        2.varianta fara duplicare de cod-mai jos
+        return accelerate(speed,1);
+    }
+
 
     public String getName() {
         return name;

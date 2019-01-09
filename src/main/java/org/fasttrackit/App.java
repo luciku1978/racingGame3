@@ -7,7 +7,19 @@ package org.fasttrackit;
 public class App 
 {
     public static void main( String[] args )
-    {   //declaring a variable and instantiation a Car object
+    {
+        Engine engine = new Engine();
+        engine.manufacturer="Renault";
+        AutoVehicle autoVehicle = new AutoVehicle(engine);
+
+        new Car(engine);
+
+
+        Vehicle vehicle = new Vehicle();
+        double distance = vehicle.accelerate(99.9,0.5);
+
+
+        //declaring a variable and instantiation a Car object
 //        // this is also called initializing a variable
 //       Car firstCompetitor = new Car(new Engine());
 //
@@ -35,7 +47,7 @@ public class App
 //        System.out.println("Traveled distance " + traveledDistance+ " km");
 //        AutoVehicle autoVehicle = new AutoVehicle(new Engine());
 
-        Vehicle vehicle = new Vehicle();
+
         vehicle.aplicationTotalNumberOfVehicles = 1;
         System.out.println("Total from vehicle 1: " + vehicle.aplicationTotalNumberOfVehicles);
 
